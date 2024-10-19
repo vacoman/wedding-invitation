@@ -76,7 +76,7 @@ document.getElementById('reserva').addEventListener('submit', function (e) {
       asistente: asistente
     };
 
-    fetch('https://script.google.com/macros/s/AKfycbypkWDXfY5PMQawvp-JS1-cdRnDZJQ7Z5G0HPXfR2O5eflWja2RM7twCTTTsNnhs40Cug/exec', {  // Reemplaza con la URL de tu Web App
+    fetch('hhttps://script.google.com/macros/s/AKfycbyBuGVOkcMzBp4dasbuoFYfd3MkPQ2xsHzScr8NITTf7V9b0Qtz6YRg40xiHpmkrbAz/exec', {  // Reemplaza con la URL de tu Web App
       method: 'POST',
       mode: 'no-cors',
       headers: {
