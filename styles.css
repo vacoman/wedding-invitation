@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+/* Estilos iniciales para la animación */
+.animated-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('path/to/imagen.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.animated-content {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    text-align: center;
+    color: white;
+}
+
+/* Clase para mostrar el contenido con animación */
+.animated-content.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+header {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
+}
+
+.header-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Asegura que la imagen esté detrás del texto */
+}
+
+.header-text {
+    z-index: 1; /* El texto se coloca por encima de la imagen */
+}
+
+
+.header-text h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+
+.header-text h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #D4AF37;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+.details-section, .rsvp-section {
+    padding: 40px;
+    text-align: center;
+}
+
+.details-section h3, .rsvp-section h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.countdown {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#countdown-timer {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#countdown-timer span {
+    margin: 0 10px;
+    padding: 10px;
+    background-color: #D4AF37;
+    color: white;
+    border-radius: 5px;
+}
+.ceremony-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #eaeaff;
+    margin-top: 30px;
+}
+
+.image-container {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.ceremony-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.ceremony-details {
+    flex: 1;
+    text-align: center;
+    color: #333;
+    font-family: 'Georgia', serif;
+}
+
+.ceremony-details h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.ceremony-details p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.ceremony-details a {
+    display: block;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.ceremony-details a:hover {
+    text-decoration: underline;
+}
+
+.Reception-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #eaeaff;
+    flex-direction: row-reverse;
+}
+
+.image-container {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.Reception-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.Reception-details {
+    flex: 1;
+    text-align: center;
+    color: #333;
+    font-family: 'Georgia', serif;
+}
+
+.Reception-details h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.Reception-details p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.Reception-details a {
+    display: block;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.Reception-details a:hover {
+    text-decoration: underline;
+}
+
+.invitacion-section {
+    height: 100vh; /* Ocupa todo el alto de la ventana */
+    background-image: url('1.png'); /* Ruta de la imagen */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+}
+
+.invitacion-content {
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+    max-width: 600px;
+    padding: 20px;
+}
+
+.invitacion-content h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.invitacion-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.invitacion-content button {
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.invitacion-content button:hover {
+    background-color: #ddd;
+}
+
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form input, form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #D4AF37;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #b59430;
+}

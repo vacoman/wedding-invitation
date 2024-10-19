@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leidy y felipe</title>
+    <link rel="stylesheet" href="styles.css">
+    <link 
+</head>
+<body>
+
+    <audio id="background-music" autoplay loop>
+        <source src="soundback.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    
+    <header class="animated-section">
+        <div class="animated-content header-text">
+            <h1>Te invitamos a nuestra boda</h1>
+            <p>Acompanaos en nuestra boda</p>
+            <h2>Leidy y felipe</h2>
+            <p>18 de diciembre, 2024</p>
+
+        </div>
+        <img src="1.png" alt="Wedding port" class="header-image">
+    </header>
+    
+
+    <section id="details" class=" details-section">
+        <div class="animated-content"></div>
+        <h3>Detalles del evento</h3>
+        <p>La ceremonia se realizara en el direccion tal...</p>
+        <p>Feha: diciembre 18, 2024 | hora: 5:00 PM</p>
+        <p>Iglesia: La de la Rioja</p>
+        <p>Lugar: Casa de los papas de leidy</p>
+    </section>
+    
+    <section class="countdown">
+        <h3>Cuenta Regresiva para nuestra boda</h3>
+        <div id="countdown-timer">
+            <span id="dias"></span> Dias 
+            <span id="horas"></span> Horas 
+            <span id="minutos"></span> Minutos 
+            <span id="segundos"></span> Segundos
+        </div>
+    </section>
+
+    <section class="animated-section ceremony-section">
+        <div class="image-container">
+            <img src="1.png" alt="Pareja en la naturaleza" class="ceremony-image">
+        </div>
+        <div class="animated-content ceremony-details">
+            <h2>Ceremonia</h2>
+            <p>Diciembre 18, 2024</p>
+            <p>5:00 PM</p>
+            <p>Iglesia: La de la Rioja</p>
+            <a href="https://maps.app.goo.gl/aubehZF19T7th4LRA" target="_blank">Lugar</a>
+        </div>
+    </section>
+
+    <section class="animated-section Reception-section">
+        <div class="image-container">
+            <img src="1.png" alt="Pareja en la naturaleza" class="Reception-image">
+        </div>
+        <div class="animated-content Reception-details">
+            <h2>Recepción</h2>
+            <p>Lugar: Casa de la mama de leidy</p>
+            <a href="https://maps.app.goo.gl/aubehZF19T7th4LRA" target="_blank">Lugar</a>
+        </div>
+    </section>
+    
+    <section class="animated-section invitacion-section">
+        <div class="animated-content invitacion-content">
+            <h3>Acompáñanos</h3>
+            <h1>¡Esperamos que puedas acompañarnos!</h1>
+        </div>
+    </section>
+    
+    
+    <section id="reserva" class="rsvp-section">
+        <h3>Reserva tu invitacion</h3>
+        <form id="reserva">
+            <label for="nombre">Tu nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+          
+            <label for="asistente">¿Vas a asistir?</label>
+            <select id="asistente" name="asistente" required>
+              <option value="Si">Si</option>
+              <option value="No">No</option>
+            </select>
+          
+            <button type="submit" class="cta-button">Enviar</button>
+          </form>
+    </section>
+
+    <footer>
+        <p>2024 Leidy y Felipe, Todos los dderechos reservados</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
